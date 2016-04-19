@@ -1,0 +1,16 @@
+<article>
+   <div [ngSwitch]="editing">
+      <div *ngSwitchWhen="true">
+         <input #input1 [(ngModel)]="question.content">
+         <div>
+            <button (click)="save()">Save</button>
+            <button (click)="cancel()">Cancel</button>
+         </div>
+      </div>
+      <div *ngSwitchDefault>
+         <p>{{question.content}}</p>
+         <button (click)="edit()">Edit</button>
+      </div>
+   </div>
+   <footer>{{question.author}}</footer>
+</article>
