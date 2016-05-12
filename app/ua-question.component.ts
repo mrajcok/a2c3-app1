@@ -1,4 +1,4 @@
-import {Component, Input, ViewChild, ElementRef, Renderer} from 'angular2/core';
+import {Component, Input, ViewChild, ElementRef, Renderer} from '@angular/core';
 import {Question}  from './question-and-answers';
 
 @Component({

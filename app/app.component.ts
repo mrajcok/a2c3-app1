@@ -1,4 +1,4 @@
-import {Component}           from 'angular2/core';
+import {Component}           from '@angular/core';
 import {UaHeaderComponent}   from './ua-header.component';
 import {UaQuestionComponent} from './ua-question.component';
 import {UaAnswerComponent}   from './ua-answer.component';
