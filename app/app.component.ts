@@ -10,7 +10,7 @@ import {Answer, QuestionAndAnswers} from './question-and-answers';
   template: `
     <ua-header [myTitle]="appTitle"></ua-header>
     <ua-question [question]="questionAndAnswers.question"></ua-question>
-    <ua-answer *ngFor="#ans of questionAndAnswers.answers; #i=index"
+    <ua-answer *ngFor="let ans of questionAndAnswers.answers; #i=index"
         [answer]="ans" [index]="i+1" (deleteEvent)="deleteAnswer($event)">
     </ua-answer>`
 })
