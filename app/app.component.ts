@@ -1,16 +1,12 @@
-import {Component}           from '@angular/core';
-import {UaHeaderComponent}   from './ua-header.component';
-import {UaQuestionComponent} from './ua-question.component';
-import {UaAnswerComponent}   from './ua-answer.component';
+import {Component}                  from '@angular/core';
 import {Answer, QuestionAndAnswers} from './question-and-answers';
 
 @Component({
   selector:   'my-app',
-  directives: [UaHeaderComponent, UaQuestionComponent, UaAnswerComponent],
   template: `
     <ua-header [myTitle]="appTitle"></ua-header>
     <ua-question [question]="questionAndAnswers.question"></ua-question>
-    <ua-answer *ngFor="let ans of questionAndAnswers.answers; #i=index"
+    <ua-answer *ngFor="let ans of questionAndAnswers.answers; let i=index"
         [answer]="ans" [index]="i+1" (deleteEvent)="deleteAnswer($event)">
     </ua-answer>`
 })
