@@ -26,7 +26,7 @@ export class UaAnswerComponent {
   @Input()  index:number;
   @Output() deleteEvent = new EventEmitter<Answer>();
   requestDelete() {
-      console.log('answer requestDelete')
+      console.log('AnswerComponent requestDelete()')
       this.deleteEvent.emit(this.answer);
   }
 }
