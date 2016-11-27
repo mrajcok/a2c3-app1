@@ -1,3 +1,8 @@
+<a name="2.2.0"></a>
+# 2.2.0 (2016-11-28)
+* Angular v2.2
+  * Move from `typings` to `@types`
+
 <a name="2.0.0"></a>
 # 2.0.0 (2016-09-22)
 * Angular 2 Final
