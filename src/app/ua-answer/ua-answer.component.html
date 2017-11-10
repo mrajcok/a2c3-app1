@@ -1,0 +1,9 @@
+<article>
+    <header>
+        <span [class.accepted-answer]="answer.accepted">#{{index}}</span>
+        <div *ngIf="answer.accepted">&#10004;</div>
+    </header>
+    <p>{{answer.content}}</p>
+    <button (click)="requestDelete()">delete</button>
+    <footer>{{answer.author}}</footer>
+</article>

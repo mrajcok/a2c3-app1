@@ -1,15 +1,10 @@
-import {Component, Input, ViewChild, ElementRef, Renderer} from '@angular/core';
-import {Question}  from './question-and-answers';
+import { Component, Input, ViewChild, ElementRef, Renderer } from '@angular/core';
+import {Question}  from '../interfaces';
 
 @Component({
   selector: 'ua-question',
-  templateUrl: 'app/ua-question.component.html',
-  styles: [`
-    article  { margin: 1em 0; border-bottom: 1px solid #bbb; }
-    input    { width: 95%; font-size: 90%; }
-    input, p { margin-bottom: 0.5em; }
-    p        { font-weight: bold; }
-    footer   { font-style: italic; margin: 0.5em 0; }`]
+  templateUrl: './ua-question.component.html',
+  styleUrls: ['./ua-question.component.css']
 })
 export class UaQuestionComponent {
   @Input() question:Question;

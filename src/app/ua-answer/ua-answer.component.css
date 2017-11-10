@@ -1,0 +1,6 @@
+article   { margin: 0.5em 0 0.5em 2.5em; border-bottom: 1px solid #ddd; }
+header    { margin-left: -2.5em; float: left; }
+header div{ color: green; font-size: x-large; }
+p, footer { margin: 0.5em 0; }
+footer    { font-style: italic; font-size: smaller; }
+.accepted-answer { font-weight: bold; }

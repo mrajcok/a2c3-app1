@@ -1,0 +1,5 @@
+<ua-header [myTitle]="appTitle"></ua-header>
+<ua-question [question]="questionAndAnswers.question"></ua-question>
+<ua-answer *ngFor="let ans of questionAndAnswers.answers; let i=index"
+    [answer]="ans" [index]="i+1" (deleteEvent)="deleteAnswer($event)">
+</ua-answer>

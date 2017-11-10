@@ -1,14 +1,10 @@
-import {Component}                  from '@angular/core';
-import {Answer, QuestionAndAnswers} from './question-and-answers';
+import { Component } from '@angular/core';
+import {Answer, QuestionAndAnswers} from './interfaces';
 
 @Component({
-  selector:   'my-app',
-  template: `
-    <ua-header [myTitle]="appTitle"></ua-header>
-    <ua-question [question]="questionAndAnswers.question"></ua-question>
-    <ua-answer *ngFor="let ans of questionAndAnswers.answers; let i=index"
-        [answer]="ans" [index]="i+1" (deleteEvent)="deleteAnswer($event)">
-    </ua-answer>`
+  selector: 'app-root',
+  templateUrl: './app.component.html'
+  //styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   appTitle = 'Udemy Course - Q&A App';
