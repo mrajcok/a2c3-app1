@@ -2,4 +2,5 @@ article  { margin: 1em 0; border-bottom: 1px solid #bbb; }
 input    { width: 95%; font-size: 90%; }
 input, p { margin-bottom: 0.5em; }
 p        { font-weight: bold; }
+button   { margin-right: 1em; }
 footer   { font-style: italic; margin: 0.5em 0; }
