@@ -1,3 +1,11 @@
+<a name="7.1"></a>
+# 7.1 (2018-12-19)
+* Angular v7.1.4
+  * To use this version, first install the Angular CLI globally:
+    * npm install -g @angular/cli
+  * Then, from the project directory, run
+    * ng serve --open
+
 <a name="6.0.1"></a>
 # 6.0.1 (2018-12-10)
 * removed references to assets directory, which is not needed for this app
