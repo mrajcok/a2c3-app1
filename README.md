@@ -1,6 +1,6 @@
 # A2c3App1
 
-This project was tested with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+This project was tested with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
 ## Development server
 
